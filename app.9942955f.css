@@ -11241,23 +11241,6 @@ progress {
   background-color: #ff0063;
 }
 
-.about-title {
-  position: relative;
-}
-.about-title::after {
-  content: "";
-  position: absolute;
-  top: 1rem;
-  left: -3rem;
-  -webkit-transform: rotate(145deg);
-      -ms-transform: rotate(145deg);
-          transform: rotate(145deg);
-  width: 10rem;
-  height: 3rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
-
 .projects-childTitle {
   width: 20rem;
   max-width: 100%;
