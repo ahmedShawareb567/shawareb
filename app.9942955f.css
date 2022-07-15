@@ -11537,6 +11537,9 @@ html ::selection {
 
 body {
   overflow-x: hidden;
+  background: #020024;
+  background: #020117;
+  background: linear-gradient(107deg, #020117 0%, #10103b 48%, #0a0c0d 100%);
 }
 
 .theApp {
