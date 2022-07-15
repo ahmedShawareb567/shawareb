@@ -1530,7 +1530,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #fff;
-  background-color: #fff;
+  background-color: #07070d;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -2036,7 +2036,7 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: #07070d;
   border: 1px solid #f9f9f9;
   border-radius: 3rem;
   max-width: 100%;
@@ -5052,7 +5052,7 @@ progress {
 }
 
 .bg-body {
-  background-color: #fff !important;
+  background-color: #07070d !important;
 }
 
 .bg-white {
@@ -10063,6 +10063,8 @@ progress {
   border-radius: 50%;
   margin: 0rem auto;
   background-color: #fff;
+  -webkit-box-shadow: 0px 10px 36px 0px rgba(255, 255, 255, 0.15);
+  box-shadow: 0px 10px 36px 0px rgba(255, 255, 255, 0.15);
 }
 @media (max-width: 991.98px) {
   .footer-details {
@@ -10306,7 +10308,7 @@ progress {
   height: 1em;
   margin-top: 0.25em;
   vertical-align: top;
-  background-color: #fff;
+  background-color: #07070d;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -11118,6 +11120,8 @@ progress {
   height: 1.5625rem;
   outline: 0.1rem solid #fff;
   border-radius: 3rem;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 @media (max-width: 767.98px) {
   .appProgress {
@@ -11130,6 +11134,17 @@ progress {
   border-radius: 3rem;
   -webkit-box-shadow: 0px 0px 15px -1px white;
   box-shadow: 0px 0px 15px -1px white;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.appProgress:hover {
+  background-color: rgba(205, 0, 99, 0.5);
+  outline-color: rgba(205, 0, 99, 0.5);
+}
+.appProgress:hover .appProgress-content {
+  background-color: #ff0063;
+  -webkit-box-shadow: 0px 0px 15px -1px #ff0063;
+  box-shadow: 0px 0px 15px -1px #ff0063;
 }
 
 .intro-text {
@@ -11202,16 +11217,16 @@ progress {
 .intro-developer-texture-1 {
   width: 100%;
   height: 100%;
-  -webkit-animation: spin 3s linear infinite;
-          animation: spin 3s linear infinite;
+  -webkit-animation: spin 6s linear infinite;
+          animation: spin 6s linear infinite;
 }
 .intro-developer-texture-2 {
   width: 85%;
   height: 85%;
-  -webkit-animation: spin 3s linear infinite;
-          animation: spin 3s linear infinite;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation: spin 6s linear infinite;
+          animation: spin 6s linear infinite;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 .intro-developer-image {
   width: 70%;
@@ -11223,6 +11238,7 @@ progress {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
+  background-color: #ff0063;
 }
 
 .about-title {
@@ -11538,7 +11554,6 @@ html ::selection {
 
 body {
   overflow-x: hidden;
-  background: url("/body-bg.8ad56a61.png") repeat-y center center;
 }
 
 .theApp {

@@ -13988,6 +13988,8 @@ if (closeMenu) {
 
 var aboutText = document.querySelector(".about-text");
 aboutText.innerHTML = aboutText.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+var introAnimText = document.querySelector(".introAnimText");
+introAnimText.innerHTML = introAnimText.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 anime.timeline({
   loop: true
 }).add({
@@ -14004,6 +14006,35 @@ anime.timeline({
   duration: 500,
   easing: "easeOutExpo",
   delay: 200
+});
+anime.timeline({
+  loop: true
+}).add({
+  targets: ".introAnimText .letter",
+  opacity: [0, 1],
+  easing: "easeInOutQuad",
+  duration: 500,
+  delay: function delay(el, i) {
+    return 150 * (i + 1);
+  }
+}).add({
+  targets: ".introAnimText",
+  opacity: 0,
+  duration: 500,
+  easing: "easeOutExpo",
+  delay: 0
+});
+VANTA.FOG({
+  el: "body",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.0,
+  minWidth: 200.0,
+  highlightColor: 0x181816,
+  midtoneColor: 0x20202,
+  lowlightColor: 0x4747d4,
+  baseColor: 0x40409
 });
 (0, _glightbox.default)();
 (0, _sal.default)();
@@ -14035,7 +14066,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52223" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65054" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
